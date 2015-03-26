@@ -24,6 +24,30 @@
 </div><!-- end contain to grid -->
 <div class="row">
 	<div class="large-12 columns">
-		<h1>Dashboard</h1>
+		<h1>{{title}}</h1>
+
+	</div>
+</div>
+<div class="row">
+	<div class="large-12 columns">
+		<table ng-controller="CustomerController" width="100%" class="twelve">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Address</th>
+				<th>City</th>
+			</tr>
+		</thead>
+		<tbody ng-repeat="customer in customers">
+			<tr>
+				<td>{{customer.name}}</td>
+				<td>{{customer.address}}</td>
+				<td>{{customer.city}}</td>
+			</tr>
+			
+		</tbody>
+			
+		</table>
+		
 	</div>
 </div>
