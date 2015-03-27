@@ -23,8 +23,14 @@
 </nav>
 </div><!-- end contain to grid -->
 <div class="row">
-	<div class="large-12 columns">
+	<div class="large-6 columns">
 		<h1>{{title}}</h1>
+
+	</div>
+</div>
+<div class="row">
+	<div class="large-6 columns customerFilter">
+		<input type="text" placeholder="Filter Customers" ng-model="name" />
 
 	</div>
 </div>
@@ -38,7 +44,7 @@
 				<th>City</th>
 			</tr>
 		</thead>
-		<tbody ng-repeat="customer in customers">
+		<tbody ng-repeat="customer in customers | orderBy: 'name' | filter: name">
 			<tr>
 				<td>{{customer.name}}</td>
 				<td>{{customer.address}}</td>
