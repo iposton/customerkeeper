@@ -2,7 +2,7 @@
 <html xmlns:ng="http://angularjs.org/" ng:app="myApp">
 <head>
   <meta charset="utf-8">
-  <title>my angular app</title>
+  <title>Angular App</title>
   <link rel="stylesheet" href="css/normalize.css"/>
   <link rel="stylesheet" href="css/foundation.min.css"/>
   <link rel="stylesheet" href="css/app.css"/>
@@ -12,8 +12,23 @@
 
  <!-- Directive -->
   <ng:view></ng:view>
+  <div class="container">
+  <div class="text-center">username is: admin, password is 1234 </div>
+ 
 
-  <div class="text-center">Angular seed app: v<span app-version></span></div>
+   <div class="app-tech">
+    <span class="red">This app uses the following technologies:</span>
+    <ul>
+      <li>HTML validations on Log In</li>
+      <li>Angular.JS to render data dynamically and cunduct search with a filter.</li>
+      <li>Foundation for css framework.</li>
+      <li><a href="https://github.com/iposton/customerkeeper/blob/master/README.md">See more about this app at my GitHub account.</a></li>
+    </ul>
+   </div>
+
+  </div>
+
+  <div class="text-center">Made by <a href="http://www.ianposton.com/">Ian Poston</a>:::Angular seed app: v<span app-version></span></div>
 
   <script src="lib/angular/angular.js" ng:autobind></script>
   <script src="lib/angular/angular-route.js"></script>
